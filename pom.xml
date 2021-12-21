@@ -7,14 +7,6 @@
   <packaging>maven-plugin</packaging>
   <name>RCD Include Maven Plugin</name>
 
-  <distributionManagement>
-    <repository>
-      <id>bintray-rcd-systems-rcd-repo</id>
-      <name>rcd-systems-rcd-repo</name>
-      <url>https://api.bintray.com/maven/rcd-systems/rcd-repo/rcd-include-maven-plugin/;publish=1</url>
-    </repository>
-  </distributionManagement>
-
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -35,4 +27,11 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>jfrog</id>
+      <url>https://rcdsystems.jfrog.io/artifactory/maven-public</url>
+    </repository>
+  </distributionManagement>
 </project>
